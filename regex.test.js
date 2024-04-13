@@ -35,12 +35,10 @@ required extention are jpg, jpeg and png.
 */
 
 function imagesSearcher(text) {
-    // Add your logic.
-    const imageRegex = /\b[\w-]+\.(jpg|jpeg|png)\b/gi;
-    const matches = text.match(imageRegex);
-    arr.push(matches);
-    return matches || [];
+    let regex = /\b[\w-]+.(jpg|jpeg|png)\b/g; 
+    return text.match(regex) || [];
 }
+
 
 
 
